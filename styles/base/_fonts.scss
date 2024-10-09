@@ -1,3 +1,5 @@
+// scss-lint:disable all
+
 @font-face {
   font-family: 'tomorrow';
   src: url('./assets/fonts/tomorrow.eot');
@@ -24,51 +26,51 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-bell:before {
+.icon-bell::before {
   content: '\e900';
 }
-.icon-bookmark:before {
+.icon-bookmark::before {
   content: '\e901';
 }
-.icon-bookmark-filled:before {
+.icon-bookmark-filled::before {
   content: '\e902';
 }
-.icon-caret:before {
+.icon-caret::before {
   content: '\e903';
 }
-.icon-cart:before {
+.icon-cart::before {
   content: '\e904';
 }
-.icon-check:before {
+.icon-check::before {
   content: '\e905';
 }
-.icon-chevron:before {
+.icon-chevron::before {
   content: '\e906';
 }
-.icon-close:before {
+.icon-close::before {
   content: '\e907';
 }
-.icon-community:before {
+.icon-community::before {
   content: '\e908';
 }
-.icon-expert:before {
+.icon-expert::before {
   content: '\e909';
 }
-.icon-lock:before {
+.icon-lock::before {
   content: '\e90a';
 }
-.icon-menu:before {
+.icon-menu::before {
   content: '\e90b';
 }
-.icon-new:before {
+.icon-new::before {
   content: '\e90c';
 }
-.icon-search:before {
+.icon-search::before {
   content: '\e90d';
 }
-.icon-star:before {
+.icon-star::before {
   content: '\e90e';
 }
-.icon-store:before {
+.icon-store::before {
   content: '\e90f';
 }
