@@ -1,0 +1,49 @@
+/* reset.scss */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+html {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  /* a태그가 속한 상위 부모의 값을 상속받음 */
+}
+
+button,
+input,
+select,
+textarea {
+  border: 0;
+  background-color: transparent; /* 투명 */
+
+  &:focus {
+    outline: none;
+    box-sizing: none;
+  }
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+}
