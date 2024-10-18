@@ -1,0 +1,22 @@
+// 아이콘이 가지는 고유의 속성(스타일)만 작성한 파일
+
+.gnb-icon-btn {
+  @include flexbox;
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+  color: $secondary;
+  transition: color 200ms ease-in-out;
+
+  &.is-menu {
+    color: $blue;
+
+    &:active {
+      color: $blue-dark;
+    }
+  }
+
+  &:active {
+    color: $primary;
+  }
+}
