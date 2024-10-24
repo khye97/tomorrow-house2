@@ -4,6 +4,18 @@
 
   position: relative;
 
+  &.is-active {
+    .my-menu-btn {
+      border-color: $blue;
+    }
+
+    .my-menu-content {
+      visibility: visible;
+      opacity: 1;
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+
   &-btn {
     width: $button-size;
     height: $button-size;
@@ -16,8 +28,7 @@
     background-size: contain;
     background-position: center center;
 
-    &:hover,
-    &.is-active {
+    &:hover {
       border-color: $blue;
     }
 
@@ -34,6 +45,10 @@
     top: $button-size + $tooltip-size + 8px;
     box-shadow: $dropdown-shadow;
     border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate3d(-50%, -10px, 0);
+    transition: all 200ms ease-in-out;
 
     &::before,
     &::after {
