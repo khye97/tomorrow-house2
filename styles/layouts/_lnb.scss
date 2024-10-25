@@ -1,0 +1,35 @@
+.lnb {
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &-list {
+    @include inline-flexbox(start);
+    white-space: nowrap;
+    position: relative;
+    left: -8px;
+  }
+
+  &-item {
+    &.is-active {
+      a {
+        color: $blue;
+        border-bottom: 2px solid $blue;
+      }
+    }
+
+    a {
+      @include inline-flexbox;
+      @include text-style(13, $dark);
+      font-weight: 700;
+      padding: 0 8px;
+      height: 40px;
+    }
+
+    .icon-new {
+      color: $red;
+    }
+  }
+}
