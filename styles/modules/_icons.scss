@@ -50,6 +50,7 @@ i {
 }
 .icon-new::before {
   content: '\e90c';
+  color: $red;
 }
 .icon-search::before {
   content: '\e90d';
