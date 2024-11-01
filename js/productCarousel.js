@@ -4,11 +4,12 @@ const productCarousel = tns({
   navContainer: '.product-carousel .thumbnail-list',
   navAsThumbnails: true,
   arrowKeys: true,
-  autoplay: true,
+  // autoplay: true,
   autoplayHoverPause: true,
   autoplayButtonOutput: false,
   mouseDrag: true,
   preventScrollOnTouch: true,
+  gutter: 1,
   // items: 1,
   // slideBy: 'page',
 })
