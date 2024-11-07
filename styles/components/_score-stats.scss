@@ -37,7 +37,7 @@
         overflow: hidden;
 
         .active-bar {
-          width: 30px;
+          width: 0;
           height: 5px;
           border-radius: (5px / 2);
           background-color: $blue;
@@ -54,6 +54,7 @@
     &-item {
       dt {
         margin-right: 8px;
+        white-space: nowrap;
       }
 
       dd {
