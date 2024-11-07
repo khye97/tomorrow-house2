@@ -41,6 +41,8 @@
           height: 5px;
           border-radius: (5px / 2);
           background-color: $blue;
+          animation: slice-active-bar;
+          animation-duration: 1000ms;
         }
       }
 
@@ -64,5 +66,15 @@
         }
       }
     }
+  }
+}
+
+@keyframes slice-active-bar {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
   }
 }
