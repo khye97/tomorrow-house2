@@ -6,6 +6,10 @@
 
     margin-bottom: 8px;
 
+    .is-answered {
+      color: $blue;
+    }
+
     .detail,
     .misc {
       @include flexbox(start);
