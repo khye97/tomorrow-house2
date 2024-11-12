@@ -3,8 +3,8 @@
   overflow: hidden;
 
   &-slider {
-    margin-bottom: 4px;
     position: relative;
+    margin-bottom: 4px;
   }
 
   &-controls {
@@ -102,6 +102,13 @@
       button {
         width: 75px;
         height: 75px;
+        overflow: hidden;
+
+        img {
+          width: 75px;
+          height: 75px;
+          min-width: 75px;
+        }
       }
     }
   }
