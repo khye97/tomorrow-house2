@@ -2,12 +2,17 @@
   @include position-center(fixed);
   width: calc(100% - #{($grid-margin * 2)});
   max-width: 360px;
+  display: none;
   padding: 40px 24px;
   z-index: $cart-modal-level;
   background-color: $white;
   border-radius: 8px;
   overflow: hidden;
   text-align: center;
+
+  &.is-active {
+    display: block;
+  }
 
   .cart-title {
     @include text-style(16, $dark);
