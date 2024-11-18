@@ -29,7 +29,7 @@ function toggleOrderCtaBookmark() {
   const count = Number(countSpan.innerHTML.replaceAll(',', ''));
   let newCount = count;
 
-  if (orderCtaBookmarkButton.classList.contains('is-active')) {
+  if (this.classList.contains('is-active')) {
     icon.classList.remove('icon-bookmark-filled');
     icon.classList.add('icon-bookmark');
     newCount = newCount - 1;
@@ -39,6 +39,7 @@ function toggleOrderCtaBookmark() {
     newCount = newCount + 1;
   }
   countSpan.innerHTML = newCount.toLocaleString();
+  countSpan.setAttribute('aria-label', `북마크 ${newCount.toLocaleString()}회`);
   this.classList.toggle('is-active');
 }
 
