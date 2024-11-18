@@ -1,8 +1,6 @@
 const orderCta = document.querySelector('.order-cta');
 const [orderCtaBookmarkButton, orderCtaBuyButton] = orderCta.children;
-
 const orderModal = document.querySelector('.order-form-modal');
-
 const orderModalOverlay = document.querySelector('.overlay');
 
 function openOrderModal() {
@@ -18,6 +16,33 @@ function closeOrderModal() {
 }
 
 orderModalOverlay.addEventListener('click', closeOrderModal);
+
+function toggleOrderCtaBookmark() {
+  // 북마크 하지 않았을 때
+  // is-active 없음
+  // ic-bookmark
+
+  // 북마크 했을 때
+  // is-active 있음
+  // ic-bookmark-filled
+  const [icon, countSpan] = this.children;
+  const count = Number(countSpan.innerHTML.replaceAll(',', ''));
+  let newCount = count;
+
+  if (orderCtaBookmarkButton.classList.contains('is-active')) {
+    icon.classList.remove('icon-bookmark-filled');
+    icon.classList.add('icon-bookmark');
+    newCount = newCount - 1;
+  } else {
+    icon.classList.remove('ic-bookmark');
+    icon.classList.add('icon-bookmark-filled');
+    newCount = newCount + 1;
+  }
+  countSpan.innerHTML = newCount.toLocaleString();
+  this.classList.toggle('is-active');
+}
+
+orderCtaBookmarkButton.addEventListener('click', toggleOrderCtaBookmark);
 
 // const buyButton = document.querySelector('.order-cta .btn-primary.btn-48');
 // const orderFormModal = document.querySelector('.order-form-modal');
